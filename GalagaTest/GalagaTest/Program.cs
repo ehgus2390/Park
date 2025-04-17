@@ -1,4 +1,4 @@
-ï»¿using System;
+using System;
 using System.Collections.Generic;
 using System.Threading;
 
@@ -18,13 +18,13 @@ class Program
         Console.WindowHeight = 25;
         Console.WindowWidth = 80;
 
-        // ì´ˆê¸° ì  ìƒì„±
+        // ÃÊ±â Àû »ı¼º
         for (int i = 0; i < 5; i++)
         {
             enemies.Add((random.Next(0, Console.WindowWidth), random.Next(0, 10)));
         }
 
-        // ê²Œì„ ë£¨í”„
+        // °ÔÀÓ ·çÇÁ
         while (!gameOver)
         {
             if (Console.KeyAvailable)
@@ -37,7 +37,7 @@ class Program
             Thread.Sleep(50);
         }
 
-        // ê²Œì„ ì˜¤ë²„ í™”ë©´
+        // °ÔÀÓ ¿À¹ö È­¸é
         Console.Clear();
         Console.SetCursorPosition(35, 12);
         Console.WriteLine("Game Over!");
@@ -67,7 +67,7 @@ class Program
 
     static void UpdateGame()
     {
-        // ì´ì•Œ ì—…ë°ì´íŠ¸
+        // ÃÑ¾Ë ¾÷µ¥ÀÌÆ®
         for (int i = bullets.Count - 1; i >= 0; i--)
         {
             var bullet = bullets[i];
@@ -79,7 +79,7 @@ class Program
                 continue;
             }
 
-            // ì¶©ëŒ ê²€ì‚¬
+            // Ãæµ¹ °Ë»ç
             for (int j = enemies.Count - 1; j >= 0; j--)
             {
                 if (bullets[i].x == enemies[j].x && bullets[i].y == enemies[j].y)
@@ -93,7 +93,7 @@ class Program
             }
         }
 
-        // ì  ì—…ë°ì´íŠ¸
+        // Àû ¾÷µ¥ÀÌÆ®
         for (int i = enemies.Count - 1; i >= 0; i--)
         {
             var enemy = enemies[i];
@@ -104,7 +104,7 @@ class Program
                 enemies[i] = (random.Next(0, Console.WindowWidth), 0);
             }
 
-            // í”Œë ˆì´ì–´ì™€ ì¶©ëŒ ê²€ì‚¬
+            // ÇÃ·¹ÀÌ¾î¿Í Ãæµ¹ °Ë»ç
             if (enemy.x == playerX && enemy.y == playerY)
             {
                 gameOver = true;
@@ -116,25 +116,25 @@ class Program
     {
         Console.Clear();
 
-        // í”Œë ˆì´ì–´ ê·¸ë¦¬ê¸°
+        // ÇÃ·¹ÀÌ¾î ±×¸®±â
         Console.SetCursorPosition(playerX, playerY);
         Console.Write("A");
 
-        // ì´ì•Œ ê·¸ë¦¬ê¸°
+        // ÃÑ¾Ë ±×¸®±â
         foreach (var bullet in bullets)
         {
             Console.SetCursorPosition(bullet.x, bullet.y);
             Console.Write("|");
         }
 
-        // ì  ê·¸ë¦¬ê¸°
+        // Àû ±×¸®±â
         foreach (var enemy in enemies)
         {
             Console.SetCursorPosition(enemy.x, enemy.y);
             Console.Write("V");
         }
 
-        // ì ìˆ˜ í‘œì‹œ
+        // Á¡¼ö Ç¥½Ã
         Console.SetCursorPosition(0, 0);
         Console.Write($"Score: {score}");
     }

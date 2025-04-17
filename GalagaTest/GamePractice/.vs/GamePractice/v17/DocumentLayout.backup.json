@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Github project\\Park\\GalagaTest\\GamePractice\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{393CE57B-7898-4DC8-AABE-161E96C00901}|GamePractice\\GamePractice.csproj|f:\\github project\\park\\galagatest\\gamepractice\\gamepractice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393CE57B-7898-4DC8-AABE-161E96C00901}|GamePractice\\GamePractice.csproj|solutionrelative:gamepractice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Github project\\Park\\GalagaTest\\GamePractice\\GamePractice\\Program.cs",
+              "RelativeDocumentMoniker": "GamePractice\\Program.cs",
+              "ToolTip": "F:\\Github project\\Park\\GalagaTest\\GamePractice\\GamePractice\\Program.cs",
+              "RelativeToolTip": "GamePractice\\Program.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAQwHkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T11:53:30.53Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

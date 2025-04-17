@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\visualstudio\\visual_C\u002B\u002B-20250330T032933Z-001\\visual_C\u002B\u002B\\\uBC15\uB3C4\uD604\\GalagaTest\\",
+  "WorkspaceRootPath": "F:\\Github project\\Park\\GalagaTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBBAD0FA-C1D8-42A5-B5B2-AAD243DC0141}|GalagaTest\\GalagaTest.csproj|d:\\visualstudio\\visual_c\u002B\u002B-20250330t032933z-001\\visual_c\u002B\u002B\\\uBC15\uB3C4\uD604\\galagatest\\galagatest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CBBAD0FA-C1D8-42A5-B5B2-AAD243DC0141}|GalagaTest\\GalagaTest.csproj|f:\\github project\\park\\galagatest\\galagatest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBBAD0FA-C1D8-42A5-B5B2-AAD243DC0141}|GalagaTest\\GalagaTest.csproj|solutionrelative:galagatest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\visualstudio\\visual_C\u002B\u002B-20250330T032933Z-001\\visual_C\u002B\u002B\\\uBC15\uB3C4\uD604\\GalagaTest\\GalagaTest\\Program.cs",
+              "DocumentMoniker": "F:\\Github project\\Park\\GalagaTest\\GalagaTest\\Program.cs",
               "RelativeDocumentMoniker": "GalagaTest\\Program.cs",
-              "ToolTip": "D:\\visualstudio\\visual_C\u002B\u002B-20250330T032933Z-001\\visual_C\u002B\u002B\\\uBC15\uB3C4\uD604\\GalagaTest\\GalagaTest\\Program.cs",
+              "ToolTip": "F:\\Github project\\Park\\GalagaTest\\GalagaTest\\Program.cs",
               "RelativeToolTip": "GalagaTest\\Program.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAwEEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T05:08:14.096Z",
               "EditorCaption": ""

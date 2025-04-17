@@ -12,3 +12,18 @@ C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\obj\Debug\net8.0\refint\
 C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.pdb
 C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.genruntimeconfig.cache
 C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\obj\Debug\net8.0\ref\GalagaTest.dll
+F:\Github project\Park\GalagaTest\GalagaTest\bin\Debug\net8.0\GalagaTest.exe
+F:\Github project\Park\GalagaTest\GalagaTest\bin\Debug\net8.0\GalagaTest.deps.json
+F:\Github project\Park\GalagaTest\GalagaTest\bin\Debug\net8.0\GalagaTest.runtimeconfig.json
+F:\Github project\Park\GalagaTest\GalagaTest\bin\Debug\net8.0\GalagaTest.dll
+F:\Github project\Park\GalagaTest\GalagaTest\bin\Debug\net8.0\GalagaTest.pdb
+F:\Github project\Park\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.GeneratedMSBuildEditorConfig.editorconfig
+F:\Github project\Park\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.AssemblyInfoInputs.cache
+F:\Github project\Park\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.AssemblyInfo.cs
+F:\Github project\Park\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.csproj.CoreCompileInputs.cache
+F:\Github project\Park\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.sourcelink.json
+F:\Github project\Park\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.dll
+F:\Github project\Park\GalagaTest\GalagaTest\obj\Debug\net8.0\refint\GalagaTest.dll
+F:\Github project\Park\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.pdb
+F:\Github project\Park\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.genruntimeconfig.cache
+F:\Github project\Park\GalagaTest\GalagaTest\obj\Debug\net8.0\ref\GalagaTest.dll

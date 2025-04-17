@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\visualstudio\\visual_C++-20250330T032933Z-001\\visual_C++\\박도현\\GalagaTest\\GalagaTest\\GalagaTest.csproj": {}
+    "F:\\Github project\\Park\\GalagaTest\\GalagaTest\\GalagaTest.csproj": {}
   },
   "projects": {
-    "D:\\visualstudio\\visual_C++-20250330T032933Z-001\\visual_C++\\박도현\\GalagaTest\\GalagaTest\\GalagaTest.csproj": {
+    "F:\\Github project\\Park\\GalagaTest\\GalagaTest\\GalagaTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\visualstudio\\visual_C++-20250330T032933Z-001\\visual_C++\\박도현\\GalagaTest\\GalagaTest\\GalagaTest.csproj",
+        "projectUniqueName": "F:\\Github project\\Park\\GalagaTest\\GalagaTest\\GalagaTest.csproj",
         "projectName": "GalagaTest",
-        "projectPath": "D:\\visualstudio\\visual_C++-20250330T032933Z-001\\visual_C++\\박도현\\GalagaTest\\GalagaTest\\GalagaTest.csproj",
+        "projectPath": "F:\\Github project\\Park\\GalagaTest\\GalagaTest\\GalagaTest.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\visualstudio\\visual_C++-20250330T032933Z-001\\visual_C++\\박도현\\GalagaTest\\GalagaTest\\obj\\",
+        "outputPath": "F:\\Github project\\Park\\GalagaTest\\GalagaTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
