@@ -1,0 +1,10 @@
+C:\Users\402-06\Desktop\박도현\DrawTest1\DrawTest1\obj\Debug\DrawTest1.csproj.AssemblyReference.cache
+C:\Users\402-06\Desktop\박도현\DrawTest1\DrawTest1\obj\Debug\DrawTest1.Form1.resources
+C:\Users\402-06\Desktop\박도현\DrawTest1\DrawTest1\obj\Debug\DrawTest1.Properties.Resources.resources
+C:\Users\402-06\Desktop\박도현\DrawTest1\DrawTest1\obj\Debug\DrawTest1.csproj.GenerateResource.cache
+C:\Users\402-06\Desktop\박도현\DrawTest1\DrawTest1\obj\Debug\DrawTest1.csproj.CoreCompileInputs.cache
+C:\Users\402-06\Desktop\박도현\DrawTest1\DrawTest1\bin\Debug\DrawTest1.exe.config
+C:\Users\402-06\Desktop\박도현\DrawTest1\DrawTest1\bin\Debug\DrawTest1.exe
+C:\Users\402-06\Desktop\박도현\DrawTest1\DrawTest1\bin\Debug\DrawTest1.pdb
+C:\Users\402-06\Desktop\박도현\DrawTest1\DrawTest1\obj\Debug\DrawTest1.exe
+C:\Users\402-06\Desktop\박도현\DrawTest1\DrawTest1\obj\Debug\DrawTest1.pdb

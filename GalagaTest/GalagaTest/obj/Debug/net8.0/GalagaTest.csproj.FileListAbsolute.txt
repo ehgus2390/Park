@@ -1,0 +1,14 @@
+C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\bin\Debug\net8.0\GalagaTest.exe
+C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\bin\Debug\net8.0\GalagaTest.deps.json
+C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\bin\Debug\net8.0\GalagaTest.runtimeconfig.json
+C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\bin\Debug\net8.0\GalagaTest.dll
+C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\bin\Debug\net8.0\GalagaTest.pdb
+C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.AssemblyInfoInputs.cache
+C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.AssemblyInfo.cs
+C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.csproj.CoreCompileInputs.cache
+C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.dll
+C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\obj\Debug\net8.0\refint\GalagaTest.dll
+C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.pdb
+C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\obj\Debug\net8.0\GalagaTest.genruntimeconfig.cache
+C:\Users\402-06\Desktop\박도현\GalagaTest\GalagaTest\obj\Debug\net8.0\ref\GalagaTest.dll
