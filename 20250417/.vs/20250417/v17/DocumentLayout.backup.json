@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\20250417\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8A55A1-5ABB-4BA3-AAB5-2CE268D44133}|20250417\\20250417.csproj|c:\\users\\402-06\\desktop\\\uBC15\uB3C4\uD604\\20250417\\20250417\\bst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8A55A1-5ABB-4BA3-AAB5-2CE268D44133}|20250417\\20250417.csproj|solutionrelative:20250417\\bst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8A55A1-5ABB-4BA3-AAB5-2CE268D44133}|20250417\\20250417.csproj|c:\\users\\402-06\\desktop\\\uBC15\uB3C4\uD604\\20250417\\20250417\\01tree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8A55A1-5ABB-4BA3-AAB5-2CE268D44133}|20250417\\20250417.csproj|solutionrelative:20250417\\01tree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8A55A1-5ABB-4BA3-AAB5-2CE268D44133}|20250417\\20250417.csproj|c:\\users\\402-06\\desktop\\\uBC15\uB3C4\uD604\\20250417\\20250417\\20250417.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DE8A55A1-5ABB-4BA3-AAB5-2CE268D44133}|20250417\\20250417.csproj|solutionrelative:20250417\\20250417.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8A55A1-5ABB-4BA3-AAB5-2CE268D44133}|20250417\\20250417.csproj|c:\\users\\402-06\\desktop\\\uBC15\uB3C4\uD604\\20250417\\20250417\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8A55A1-5ABB-4BA3-AAB5-2CE268D44133}|20250417\\20250417.csproj|solutionrelative:20250417\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BST.cs",
+              "DocumentMoniker": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\20250417\\20250417\\BST.cs",
+              "RelativeDocumentMoniker": "20250417\\BST.cs",
+              "ToolTip": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\20250417\\20250417\\BST.cs*",
+              "RelativeToolTip": "20250417\\BST.cs*",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAEwAUBAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T01:34:11.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20250417",
+              "DocumentMoniker": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\20250417\\20250417\\20250417.csproj",
+              "RelativeDocumentMoniker": "20250417\\20250417.csproj",
+              "ToolTip": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\20250417\\20250417\\20250417.csproj",
+              "RelativeToolTip": "20250417\\20250417.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-17T01:33:40.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "01Tree.cs",
+              "DocumentMoniker": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\20250417\\20250417\\01Tree.cs",
+              "RelativeDocumentMoniker": "20250417\\01Tree.cs",
+              "ToolTip": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\20250417\\20250417\\01Tree.cs",
+              "RelativeToolTip": "20250417\\01Tree.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T01:03:53.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\20250417\\20250417\\Program.cs",
+              "RelativeDocumentMoniker": "20250417\\Program.cs",
+              "ToolTip": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\20250417\\20250417\\Program.cs",
+              "RelativeToolTip": "20250417\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T00:23:56.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

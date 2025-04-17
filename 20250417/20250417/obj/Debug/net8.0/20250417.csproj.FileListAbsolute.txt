@@ -1,0 +1,14 @@
+C:\Users\402-06\Desktop\박도현\20250417\20250417\bin\Debug\net8.0\20250417.exe
+C:\Users\402-06\Desktop\박도현\20250417\20250417\bin\Debug\net8.0\20250417.deps.json
+C:\Users\402-06\Desktop\박도현\20250417\20250417\bin\Debug\net8.0\20250417.runtimeconfig.json
+C:\Users\402-06\Desktop\박도현\20250417\20250417\bin\Debug\net8.0\20250417.dll
+C:\Users\402-06\Desktop\박도현\20250417\20250417\bin\Debug\net8.0\20250417.pdb
+C:\Users\402-06\Desktop\박도현\20250417\20250417\obj\Debug\net8.0\20250417.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\402-06\Desktop\박도현\20250417\20250417\obj\Debug\net8.0\20250417.AssemblyInfoInputs.cache
+C:\Users\402-06\Desktop\박도현\20250417\20250417\obj\Debug\net8.0\20250417.AssemblyInfo.cs
+C:\Users\402-06\Desktop\박도현\20250417\20250417\obj\Debug\net8.0\20250417.csproj.CoreCompileInputs.cache
+C:\Users\402-06\Desktop\박도현\20250417\20250417\obj\Debug\net8.0\20250417.dll
+C:\Users\402-06\Desktop\박도현\20250417\20250417\obj\Debug\net8.0\refint\20250417.dll
+C:\Users\402-06\Desktop\박도현\20250417\20250417\obj\Debug\net8.0\20250417.pdb
+C:\Users\402-06\Desktop\박도현\20250417\20250417\obj\Debug\net8.0\20250417.genruntimeconfig.cache
+C:\Users\402-06\Desktop\박도현\20250417\20250417\obj\Debug\net8.0\ref\20250417.dll
