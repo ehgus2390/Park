@@ -1,10 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\GamePracticeVer2\\",
+  "WorkspaceRootPath": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|c:\\users\\402-06\\desktop\\\uBC15\uB3C4\uD604\\park\\galagatest\\gamepracticever2\\gamepracticever2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|f:\\github project\\park\\galagatest\\gamepracticever2\\gamepracticever2\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|solutionrelative:gamepracticever2\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|f:\\github project\\park\\galagatest\\gamepracticever2\\gamepracticever2\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|solutionrelative:gamepracticever2\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|f:\\github project\\park\\galagatest\\gamepracticever2\\gamepracticever2\\gamepracticever2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|solutionrelative:gamepracticever2\\gamepracticever2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|f:\\github project\\park\\galagatest\\gamepracticever2\\gamepracticever2\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|solutionrelative:gamepracticever2\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|f:\\github project\\park\\galagatest\\gamepracticever2\\gamepracticever2\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|solutionrelative:gamepracticever2\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|f:\\github project\\park\\galagatest\\gamepracticever2\\gamepracticever2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|solutionrelative:gamepracticever2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|f:\\github project\\park\\galagatest\\gamepracticever2\\gamepracticever2\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|solutionrelative:gamepracticever2\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,36 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GamePracticeVer2",
+              "DocumentMoniker": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\GamePracticeVer2.csproj",
+              "RelativeDocumentMoniker": "GamePracticeVer2\\GamePracticeVer2.csproj",
+              "ToolTip": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\GamePracticeVer2.csproj",
+              "RelativeToolTip": "GamePracticeVer2\\GamePracticeVer2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-18T10:51:15.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameObject.cs",
+              "DocumentMoniker": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\GameObject.cs",
+              "RelativeDocumentMoniker": "GamePracticeVer2\\GameObject.cs",
+              "ToolTip": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\GameObject.cs",
+              "RelativeToolTip": "GamePracticeVer2\\GameObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T07:29:05.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Player.cs",
+              "DocumentMoniker": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Player.cs",
+              "RelativeDocumentMoniker": "GamePracticeVer2\\Player.cs",
+              "ToolTip": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Player.cs",
+              "RelativeToolTip": "GamePracticeVer2\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T07:09:42.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Enemy.cs",
+              "RelativeDocumentMoniker": "GamePracticeVer2\\Enemy.cs",
+              "ToolTip": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Enemy.cs",
+              "RelativeToolTip": "GamePracticeVer2\\Enemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T07:09:12.148Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Program.cs",
-              "RelativeDocumentMoniker": "GamePracticeVer2\\Program.cs",
-              "ToolTip": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Program.cs",
-              "RelativeToolTip": "GamePracticeVer2\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Bullet.cs",
+              "RelativeDocumentMoniker": "GamePracticeVer2\\Bullet.cs",
+              "ToolTip": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Bullet.cs",
+              "RelativeToolTip": "GamePracticeVer2\\Bullet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T06:41:47.71Z",
+              "WhenOpened": "2025-04-18T07:08:41.863Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Game.cs",
+              "DocumentMoniker": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Game.cs",
+              "RelativeDocumentMoniker": "GamePracticeVer2\\Game.cs",
+              "ToolTip": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Game.cs",
+              "RelativeToolTip": "GamePracticeVer2\\Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T06:43:11.846Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Program.cs",
+              "RelativeDocumentMoniker": "GamePracticeVer2\\Program.cs",
+              "ToolTip": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Program.cs",
+              "RelativeToolTip": "GamePracticeVer2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T06:41:47.71Z",
+              "EditorCaption": ""
             }
           ]
         }

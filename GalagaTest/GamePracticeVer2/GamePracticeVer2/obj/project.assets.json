@@ -8,23 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\402-06\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\402-06\\Desktop\\박도현\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\GamePracticeVer2.csproj",
+      "projectUniqueName": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\GamePracticeVer2.csproj",
       "projectName": "GamePracticeVer2",
-      "projectPath": "C:\\Users\\402-06\\Desktop\\박도현\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\GamePracticeVer2.csproj",
-      "packagesPath": "C:\\Users\\402-06\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\402-06\\Desktop\\박도현\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\obj\\",
+      "projectPath": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\GamePracticeVer2.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\402-06\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

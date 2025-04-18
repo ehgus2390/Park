@@ -1,0 +1,15 @@
+F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\bin\Debug\net8.0\GamePracticeVer2.exe
+F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\bin\Debug\net8.0\GamePracticeVer2.deps.json
+F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\bin\Debug\net8.0\GamePracticeVer2.runtimeconfig.json
+F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\bin\Debug\net8.0\GamePracticeVer2.dll
+F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\bin\Debug\net8.0\GamePracticeVer2.pdb
+F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.GeneratedMSBuildEditorConfig.editorconfig
+F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.AssemblyInfoInputs.cache
+F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.AssemblyInfo.cs
+F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.csproj.CoreCompileInputs.cache
+F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.sourcelink.json
+F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.dll
+F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\refint\GamePracticeVer2.dll
+F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.pdb
+F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.genruntimeconfig.cache
+F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\ref\GamePracticeVer2.dll
