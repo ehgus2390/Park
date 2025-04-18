@@ -15,8 +15,8 @@ class Program
     static void Main()
     {
         Console.CursorVisible = false;                               //마우스 커서 깜빡임 없애기
-        Console.WindowHeight = 120;                                    //콘솔창 높이
-        Console.WindowWidth = 200;                                   //콘솔창 넓이 조정가능
+        Console.WindowHeight = 25;                                    //콘솔창 높이
+        Console.WindowWidth = 80;                                   //콘솔창 넓이 조정가능
 
         for (int i = 0; i < 5; i++)
         {
@@ -54,8 +54,12 @@ class Program
             case ConsoleKey.RightArrow:
                 if (playerX < Console.WindowWidth -1) playerX++;     // ConsoleKey.RightArrow을 눌렀을 때 화면 넓이보다 playerX의 위치값이 작다면 (200이하까지)++;
                 break;
-            //case ConsoleKey.Spacebar:
-            //    if 
+            case ConsoleKey.Spacebar:
+                bullets.Add((playerX, playerY - 1));
+                break;
+            case ConsoleKey.Escape:
+                gameOver = true;
+                break;
         }
 
     }

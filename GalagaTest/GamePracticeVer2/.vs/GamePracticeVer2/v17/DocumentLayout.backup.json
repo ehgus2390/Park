@@ -43,15 +43,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GamePracticeVer2",
+              "Title": "GamePracticeVer2.csproj",
               "DocumentMoniker": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\GamePracticeVer2.csproj",
               "RelativeDocumentMoniker": "GamePracticeVer2\\GamePracticeVer2.csproj",
               "ToolTip": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\GamePracticeVer2.csproj",
               "RelativeToolTip": "GamePracticeVer2\\GamePracticeVer2.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-18T10:51:15.449Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T10:51:15.449Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "GamePracticeVer2\\GameObject.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T07:29:05.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T07:29:05.378Z"
             },
             {
               "$type": "Document",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "GamePracticeVer2\\Player.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T07:09:42.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T07:09:42.381Z"
             },
             {
               "$type": "Document",
@@ -89,8 +86,7 @@
               "RelativeToolTip": "GamePracticeVer2\\Enemy.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T07:09:12.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T07:09:12.148Z"
             },
             {
               "$type": "Document",
@@ -100,7 +96,7 @@
               "RelativeDocumentMoniker": "GamePracticeVer2\\Bullet.cs",
               "ToolTip": "F:\\Github project\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Bullet.cs",
               "RelativeToolTip": "GamePracticeVer2\\Bullet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T07:08:41.863Z",
               "EditorCaption": ""
@@ -115,8 +111,7 @@
               "RelativeToolTip": "GamePracticeVer2\\Game.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T06:43:11.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T06:43:11.846Z"
             },
             {
               "$type": "Document",
@@ -128,8 +123,7 @@
               "RelativeToolTip": "GamePracticeVer2\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T06:41:47.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T06:41:47.71Z"
             }
           ]
         }
