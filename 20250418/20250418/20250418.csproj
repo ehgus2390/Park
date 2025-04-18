@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>_20250418</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BubbleSort.cs" />
+    <Compile Remove="GameDefine.cs" />
+    <Compile Remove="MainGame.cs" />
+    <Compile Remove="ObserverExample.cs" />
+    <Compile Remove="Player.cs" />
+    <Compile Remove="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="BubbleSort.cs" />
+    <None Include="GameDefine.cs" />
+    <None Include="MainGame.cs" />
+    <None Include="ObserverExample.cs" />
+    <None Include="Player.cs" />
+    <None Include="Program.cs" />
+  </ItemGroup>
+
+</Project>
