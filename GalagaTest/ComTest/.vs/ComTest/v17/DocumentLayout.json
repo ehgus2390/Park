@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\visualstudio\\visual_C\u002B\u002B-20250330T032933Z-001\\visual_C\u002B\u002B\\ComTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2ADE9C-665F-469B-92BC-38217458BF58}|ComTest\\ComTest.csproj|d:\\visualstudio\\visual_c\u002B\u002B-20250330t032933z-001\\visual_c\u002B\u002B\\comtest\\comtest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C2ADE9C-665F-469B-92BC-38217458BF58}|ComTest\\ComTest.csproj|solutionrelative:comtest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\visualstudio\\visual_C\u002B\u002B-20250330T032933Z-001\\visual_C\u002B\u002B\\ComTest\\ComTest\\Program.cs",
+              "RelativeDocumentMoniker": "ComTest\\Program.cs",
+              "ToolTip": "D:\\visualstudio\\visual_C\u002B\u002B-20250330T032933Z-001\\visual_C\u002B\u002B\\ComTest\\ComTest\\Program.cs",
+              "RelativeToolTip": "ComTest\\Program.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAYwMgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T08:42:32.708Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

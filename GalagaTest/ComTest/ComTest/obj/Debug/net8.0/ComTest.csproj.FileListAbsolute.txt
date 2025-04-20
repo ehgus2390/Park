@@ -1,0 +1,14 @@
+D:\visualstudio\visual_C++-20250330T032933Z-001\visual_C++\ComTest\ComTest\bin\Debug\net8.0\ComTest.exe
+D:\visualstudio\visual_C++-20250330T032933Z-001\visual_C++\ComTest\ComTest\bin\Debug\net8.0\ComTest.deps.json
+D:\visualstudio\visual_C++-20250330T032933Z-001\visual_C++\ComTest\ComTest\bin\Debug\net8.0\ComTest.runtimeconfig.json
+D:\visualstudio\visual_C++-20250330T032933Z-001\visual_C++\ComTest\ComTest\bin\Debug\net8.0\ComTest.dll
+D:\visualstudio\visual_C++-20250330T032933Z-001\visual_C++\ComTest\ComTest\bin\Debug\net8.0\ComTest.pdb
+D:\visualstudio\visual_C++-20250330T032933Z-001\visual_C++\ComTest\ComTest\obj\Debug\net8.0\ComTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\visualstudio\visual_C++-20250330T032933Z-001\visual_C++\ComTest\ComTest\obj\Debug\net8.0\ComTest.AssemblyInfoInputs.cache
+D:\visualstudio\visual_C++-20250330T032933Z-001\visual_C++\ComTest\ComTest\obj\Debug\net8.0\ComTest.AssemblyInfo.cs
+D:\visualstudio\visual_C++-20250330T032933Z-001\visual_C++\ComTest\ComTest\obj\Debug\net8.0\ComTest.csproj.CoreCompileInputs.cache
+D:\visualstudio\visual_C++-20250330T032933Z-001\visual_C++\ComTest\ComTest\obj\Debug\net8.0\ComTest.dll
+D:\visualstudio\visual_C++-20250330T032933Z-001\visual_C++\ComTest\ComTest\obj\Debug\net8.0\refint\ComTest.dll
+D:\visualstudio\visual_C++-20250330T032933Z-001\visual_C++\ComTest\ComTest\obj\Debug\net8.0\ComTest.pdb
+D:\visualstudio\visual_C++-20250330T032933Z-001\visual_C++\ComTest\ComTest\obj\Debug\net8.0\ComTest.genruntimeconfig.cache
+D:\visualstudio\visual_C++-20250330T032933Z-001\visual_C++\ComTest\ComTest\obj\Debug\net8.0\ref\ComTest.dll
