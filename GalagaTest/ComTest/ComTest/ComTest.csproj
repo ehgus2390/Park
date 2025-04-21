@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="F:\Github project\Park\GalagaTest\gameTest1.cs" Link="gameTest1.cs" />
-  </ItemGroup>
-
 </Project>
