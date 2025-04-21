@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\ComTest\\",
+  "WorkspaceRootPath": "F:\\Github project\\Park\\GalagaTest\\ComTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C2ADE9C-665F-469B-92BC-38217458BF58}|ComTest\\ComTest.csproj|c:\\users\\402-06\\desktop\\\uBC15\uB3C4\uD604\\park\\galagatest\\comtest\\comtest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C2ADE9C-665F-469B-92BC-38217458BF58}|ComTest\\ComTest.csproj|f:\\github project\\park\\galagatest\\comtest\\comtest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C2ADE9C-665F-469B-92BC-38217458BF58}|ComTest\\ComTest.csproj|solutionrelative:comtest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C2ADE9C-665F-469B-92BC-38217458BF58}|ComTest\\ComTest.csproj|c:\\users\\402-06\\desktop\\\uBC15\uB3C4\uD604\\park\\galagatest\\comtest\\comtest\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C2ADE9C-665F-469B-92BC-38217458BF58}|ComTest\\ComTest.csproj|solutionrelative:comtest\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C2ADE9C-665F-469B-92BC-38217458BF58}|ComTest\\ComTest.csproj|f:\\github project\\park\\galagatest\\comtest\\comtest\\boss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C2ADE9C-665F-469B-92BC-38217458BF58}|ComTest\\ComTest.csproj|solutionrelative:comtest\\boss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,48 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\ComTest\\ComTest\\Player.cs",
-              "RelativeDocumentMoniker": "ComTest\\Player.cs",
-              "ToolTip": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\ComTest\\ComTest\\Player.cs",
-              "RelativeToolTip": "ComTest\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T01:46:52.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\ComTest\\ComTest\\Program.cs",
+              "DocumentMoniker": "F:\\Github project\\Park\\GalagaTest\\ComTest\\ComTest\\Program.cs",
               "RelativeDocumentMoniker": "ComTest\\Program.cs",
-              "ToolTip": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\ComTest\\ComTest\\Program.cs*",
+              "ToolTip": "F:\\Github project\\Park\\GalagaTest\\ComTest\\ComTest\\Program.cs*",
               "RelativeToolTip": "ComTest\\Program.cs*",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAkwJgAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAADwvzUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T08:42:32.708Z",
+              "WhenOpened": "2025-04-21T13:32:53.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "boss.cs",
+              "DocumentMoniker": "F:\\Github project\\Park\\GalagaTest\\ComTest\\ComTest\\boss.cs",
+              "RelativeDocumentMoniker": "ComTest\\boss.cs",
+              "ToolTip": "F:\\Github project\\Park\\GalagaTest\\ComTest\\ComTest\\boss.cs",
+              "RelativeToolTip": "ComTest\\boss.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T01:46:52.62Z",
               "EditorCaption": ""
             }
           ]

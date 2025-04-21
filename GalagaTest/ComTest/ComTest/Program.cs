@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading;
+
  /**********************************************************************
  [핵심로직]
  -  플레이어 움직임(총알, 적 총알, 적 기체) 충돌검사시 리스트안의 인덱스들을 for문을 사용하여 역순으로 순회함
@@ -17,29 +19,41 @@ class GallagaGame
     private const int HEIGHT = 20;
     private const int FRAME_DELAY = 50;
 
+    private int bossX;
     private int playerX;
     private int score;
     private bool isGameOver;
     private List<(int x, int y)> bullets;
     private List<(int x, int y)> enemies;
     private List<(int x, int y)> enemyBullets;
+    private List<(int x, int y)> Boss;
+    
+    private bool bossSpawned = false;
+    private Stopwatch gameTimer;
     private Random random;
 
     public GallagaGame()
     {
+        bossX = WIDTH / 2;
         playerX = WIDTH / 2;                           //전체 화면의 1/2 에서 시작
         score = 0;                                     //스코어 0점에서 시작 적 기체 명중시+=100
         isGameOver = false;
         bullets = new List<(int x, int y)>();          //List<(x,y)>값 bullets변수에 할당
         enemies = new List<(int x, int y)>();           //List<(x,y)>값 enemies변수에 할당
         enemyBullets = new List<(int x, int y)>();     //List<(x,y)>값 enemyBullets변수에 할당
+        Boss = new List<(int x, int y)>();
+        
+        gameTimer = new Stopwatch();
         random = new Random();
 
-
+        //for (int i = 0; i < 1; i++)
+        //{
+        //    Boss.Add((random.Next(5, WIDTH - 5), random.Next(2, 8)));
+        //}
         // 초기 적 생성
         for (int i = 0; i < 9; i++)
         {
-            enemies.Add((random.Next(5, WIDTH - 5), random.Next(2, 8)));        //적 ?마리 생성 random위치(x좌표 5이상 WIDTH-5이하),(Y좌표 2이상 8이하)
+            enemies.Add((random.Next(5, WIDTH - 5), random.Next(1, 5)));        //적 ?마리 생성 random위치(x좌표 5이상 WIDTH-5이하),(Y좌표 2이상 8이하)
         }
     }
 
@@ -47,8 +61,19 @@ class GallagaGame
     {
         Console.CursorVisible = false;                                      //커서위치 숨김
         Console.WindowHeight = HEIGHT + 2;
-        Console.WindowWidth = WIDTH + 2;                            //콘솔창의 넓이를 설정할때 Player기체의 움직임을 고려해서 전체 넓이(WIDTH)에 +2한 값을 
-                                                                           //콘솔창의 크기로 설정
+        Console.WindowWidth = WIDTH + 2;                            //콘솔창의 넓이를 설정할때 Player기체의 움직임을 고려해서 전체 넓이(WIDTH)에 +2한 값을                                                             
+        Console.WriteLine("갤러그 게임을 시작합니다!");           //콘솔창의 크기로 설정
+        Console.WriteLine("조작법:");
+        Console.WriteLine("← : 왼쪽 이동");
+        Console.WriteLine("→ : 오른쪽 이동");
+        Console.WriteLine("스페이스바 : 발사");
+        Console.WriteLine("60초 후 보스가 등장합니다!");
+        Console.WriteLine("아무 키나 누르면 시작합니다...");
+        Console.ReadKey(true);
+
+        gameTimer.Start();
+
+
         while (!isGameOver)                                       //!isGameOver는 아직 게임이 끝나지 않았을 때 while루프 실행
         {
             if (Console.KeyAvailable)                           //사용자가 키를 입력했는지 확인하는 함수
@@ -68,7 +93,7 @@ class GallagaGame
     }                                                               
 
     private void HandleInput()
-    {//플레이어 이동키
+    {
         var key = Console.ReadKey(true).Key;                        //ReadKey로 키 입력을 기다림. true는 눌린 키를 화면에 표시하지 않기 위함.
         
         switch (key)                                                //var key변수를 switch에 할당
@@ -87,6 +112,14 @@ class GallagaGame
 
     private void Update()
     {
+        int gameTime = (int)gameTimer.Elapsed.TotalSeconds;
+
+        if (gameTime >= 60 && !bossSpawned)
+        {
+            bossSpawned = true;
+            
+            UpdateBoss();
+        }
         // 총알 이동
         for (int i = bullets.Count-1; i >= 0; i--)              //bullets리스트의 마지막 요소부터 역순으로 순회
         {                                                     //플레이어의 총알[i]가 순서대로 순회했을 때 없어진 총알의 리스트 인덱스를 호출하지 않게되고
@@ -101,8 +134,8 @@ class GallagaGame
         // 적 총알 이동
         for (int i = enemyBullets.Count-1; i >= 0; i--)
         {
-            var bullet = enemyBullets[i];                       //enemyBullets[i]리스트를 bullet에 넣고
-            int direction = random.Next(3) - 1;         //int direction = random.Next(3) - 1; ====>-1 , 0 , 1
+            var bullet = enemyBullets[i];                       //enemyBullets[i]리스트를 bullet에 넣는다
+            int direction = random.Next(5) - 2;         //int direction = random.Next(3) - 1; ====>-1 , 0 , 1
             int newX = bullet.x + direction;          //-1(왼쪽),0(가운데),1(오른쪽)랜덤방향을 bullet.x축과 더하고 newX변수에 할당
             int newY = bullet.y + 1;                            //bullet.x에 해당하는 bullet.y좌표를 +1씩 증가
             if (newX >=0 && newX < WIDTH)               //화면 안에 구성을 위해서 x축이 0보다 크고 화면의 넓이(WIDTH=60)보다 작아야 함
@@ -151,12 +184,37 @@ class GallagaGame
             }
         }
     }
-    
+
+    private void UpdateBoss()
+    {
+        //보스 업데이트
+        for (int i = Boss.Count - 1; i >= 0; i--)
+        {   //보스 총알발사 빈도
+            var boss = Boss[i];
+            if (random.Next(100) < 70)
+            {
+                enemyBullets.Add((boss.x, boss.y + 1));
+                enemyBullets.Add((boss.x - 1, boss.y)); 
+                enemyBullets.Add((boss.x + 1, boss.y));
+            }
+            //보스 움직임 거리
+            if (random.Next(100) < 50)
+            {
+                int newX = boss.x + (random.Next(2) * 2 -1);
+                if (newX > 0 && newX < WIDTH - 1)
+                {
+                    Boss[i] = (newX, boss.y);
+                }
+            }
+        }
+    }
+
+
     private void CheckCollision()
     {
         // 플레이어 총알과 적 충돌
         for (int i = bullets.Count - 1; i >= 0; i--)         //플레이어의 총알[i]가 순서대로 순회하고 삭제했을 때 삭제된 총알인덱스안의 요소를 건너뛰어서(리스트의 인덱스요소가 한칸씩 땡겨짐)
-        {                                                      //오류가 생김 그래서 총알의 리스트를 역순으로 출력하면 앞에 없어진 인덱스의 값에 오류가 없음
+        {                                                   //오류가 생김 그래서 총알의 리스트를 역순으로 출력하면 앞에 없어진 인덱스의 값에 오류가 없음                              
             for (int j = enemies.Count - 1; j >= 0; j--)
             {
                 if (bullets[i].x == enemies[j].x && bullets[i].y == enemies[j].y)   //사용자 총알의 위치와 적 기체X,Y좌표 일치시 
@@ -181,40 +239,46 @@ class GallagaGame
         }
     }
 
+    
+
     private void Draw()
     {
         Console.SetCursorPosition(0, 0);
-
-        // 게임 화면 초기화
+        int timeAttack = Math.Max(0, 60 - (int)gameTimer.Elapsed.TotalSeconds);
+        
+        
         var screen = new char[HEIGHT, WIDTH];                                   //이 배열은 char형식의 2차원 배열을 형성(게임 화면의 각 위치에 어떤문자를 출력할지 저장)
         for (int y = 0; y < HEIGHT; y++)
             for (int x = 0; x < WIDTH; x++)
                 screen[y, x] = ' ';
 
-        // 플레이어
+        
         //Console.SetCursorPosition(playerX, HEIGHT);
         //Console.ForegroundColor = ConsoleColor.White;
         screen[HEIGHT - 1, playerX] = 'A';                                  //플레이어'A'위치 HEIGHT(최대20)-1 --->Y좌표 , X좌표--->2/60
         //Console.Write(playerX.Symbol);
         
 
-        // 총알
+        
         foreach (var bullet in bullets)                                     //foreach문을 사용하여 bullets리스트안의 모든 bullet을 순회
             if (bullet.y >= 0 && bullet.y < HEIGHT)                     //총알의 위치가 y축에서 0보다 크거나같고 HEIGHT(20)보다 작은 조건에서
                 screen[bullet.y, bullet.x] = '|';                      //screen배열의 위치에 'ㅣ'문자 출력
 
-        // 적 총알
+        
         
         foreach (var bullet in enemyBullets)                        //enemyBullets리스트의 모든 총알 순회
             if (bullet.y >= 0 && bullet.y < HEIGHT)             //총알의 위치가 y축에서 0보다 크거나같고 HEIGHT(20)보다 작은 조건에서
                 screen[bullet.y, bullet.x] = '*';                   //screen배열의 위치에 'ㅣ'문자 출력(총알이 화면밖으로 나가면 출력하지 않음)
 
-        // 적 기체
+        
         //Console.ForegroundColor = ConsoleColor.Red;
         foreach (var enemy in enemies)
             screen[enemy.y, enemy.x] = 'W';
 
-        // 화면 출력
+        foreach (var boss in Boss)
+            screen[boss.y, boss.x] = 'B';
+
+        
         for (int y = 0; y < HEIGHT; y++)
         {
             for (int x = 0; x < WIDTH; x++)
@@ -231,6 +295,10 @@ class GallagaGame
                 {
                     Console.ForegroundColor = ConsoleColor.Cyan;
                 }
+                else if (screen[y,x] == 'B')
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                }
                 //else
                 //{
                 //    Console.ForegroundColor = ConsoleColor.Gray;
@@ -240,15 +308,15 @@ class GallagaGame
             Console.WriteLine();
         }
 
-        // 점수 출력
-        Console.WriteLine($"Score: {score}");
+        
+        Console.WriteLine($"Score: {score} 남은 시간: {timeAttack}초");
     }
 
     private void GameOver()
     {
         Console.Clear();                                                //적의 총알을 맞을시 콘솔창 clear
         Console.WriteLine($"Game Over! Final Score: {score}");          //총 스코어 확인
-        Console.WriteLine("Press any key to exit...");                      //게임종료 키
+        Console.WriteLine("Press any key to exit");                      //게임종료 키
         Console.ReadKey();                                          
     }
 

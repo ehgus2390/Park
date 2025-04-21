@@ -27,3 +27,18 @@ C:\Users\402-06\Desktop\박도현\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8
 C:\Users\402-06\Desktop\박도현\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ComTest.pdb
 C:\Users\402-06\Desktop\박도현\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ComTest.genruntimeconfig.cache
 C:\Users\402-06\Desktop\박도현\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ref\ComTest.dll
+F:\Github project\Park\GalagaTest\ComTest\ComTest\bin\Debug\net8.0\ComTest.exe
+F:\Github project\Park\GalagaTest\ComTest\ComTest\bin\Debug\net8.0\ComTest.deps.json
+F:\Github project\Park\GalagaTest\ComTest\ComTest\bin\Debug\net8.0\ComTest.runtimeconfig.json
+F:\Github project\Park\GalagaTest\ComTest\ComTest\bin\Debug\net8.0\ComTest.dll
+F:\Github project\Park\GalagaTest\ComTest\ComTest\bin\Debug\net8.0\ComTest.pdb
+F:\Github project\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ComTest.GeneratedMSBuildEditorConfig.editorconfig
+F:\Github project\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ComTest.AssemblyInfoInputs.cache
+F:\Github project\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ComTest.AssemblyInfo.cs
+F:\Github project\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ComTest.csproj.CoreCompileInputs.cache
+F:\Github project\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ComTest.sourcelink.json
+F:\Github project\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ComTest.dll
+F:\Github project\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\refint\ComTest.dll
+F:\Github project\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ComTest.pdb
+F:\Github project\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ComTest.genruntimeconfig.cache
+F:\Github project\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ref\ComTest.dll
