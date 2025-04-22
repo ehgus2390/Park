@@ -32,9 +32,9 @@ class GallagaGame
     private List<(int x, int y)> enemyBullets;
     private List<(int x, int y)> Boss;
     
-    private DateTime lastMoveTime = DateTime.Now; // DateTimeNow속성에 접근하여 현재 시스템의 시간정보를 담고있는 새로운 DateTime 반환 lastMoveTime에 마지막 이동 시간을 저장
-                                                  //현재 시간을 기록하는 lastMoveTime이라는 DateTime변수를 선언하고 초기화함.
-    private const double MOVE_INTERVAL = 0.01;    //움직임 간격 0.01초
+    private DateTime lastMoveTime = DateTime.Now; // DateTimeNow속성에 접근하여 현재 시스템의 시간정보를 담고있는 새로운 DateTime(날짜와 시간정보를 모두 담을수있는 자료형(특정 이벤트가 발생한 시간 저장))반환 
+                                                  //현재 시간정보와 날짜를(DateTime.Now) ---> lastMoveTime에 마지막 이동 시간을 저장 ---> 현재 시간을 기록하는 lastMoveTime이라는 DateTime변수를 선언하고 초기화함.
+    private const double MOVE_INTERVAL = 0.01;    //마지막 이동 이후 0.01초가 지났을 때 움직일 수 있음
     private bool isMoving = false;
 
 
@@ -58,7 +58,7 @@ class GallagaGame
         random = new Random();
 
 
-        for (int i = 0; i < 8; i++)
+        for (int i = 0; i < 9; i++)
         {
             enemies.Add((random.Next(5, WIDTH - 5), random.Next(2, 6)));        //적 ?마리 생성 random위치(x좌표 5이상 WIDTH-5이하),(Y좌표 2이상 8이하)
         }
@@ -93,7 +93,7 @@ class GallagaGame
                                                     //isgameOver = True 일 때 GameOver();함수(게임 종료화면) 호출
             Draw();                                                     //Draw함수(적 모양, 플레이어 기체, 총알, 게임화면 출력/초기화)
 
-            Thread.Sleep(FRAME_DELAY);                              //적이 모두 죽고 다시 새로운 적을 생성할 때 1초동안 화면종료 후 재출력
+            Thread.Sleep(FRAME_DELAY);                              //실행중인 스레드를 0.05초 동안 일시 중지
         }
 
         GameOver();                                                 
@@ -102,19 +102,19 @@ class GallagaGame
     private void HandleInput()
     {
 
-        ConsoleKeyInfo keyInfo = Console.ReadKey(true);         //ReadKey로 키 입력을 기다림. true는 눌린 키를 화면에 표시하지 않기 위함.
-        var currentTime = DateTime.Now;                 //현재 시스템의 날짜와 시간을 담고있는 DateTime.Now객체를 currentTime변수에 저장
-
+        ConsoleKeyInfo keyInfo = Console.ReadKey(true);                     //ReadKey로 키 입력을 기다림. true는 눌린 키를 화면에 표시하지 않기 위함.
+        var currentTime = DateTime.Now;                                     //현재 시스템의 날짜와 시간을 담고있는 DateTime.Now객체를 currentTime변수에 저장
+        //시간 간격을 두고 키 입력을 처리하므로 키 입력버퍼가 쌓이는 것을 방지합니다
         switch (keyInfo.Key)
         {
 
             case ConsoleKey.LeftArrow:
-                
-                if ((currentTime - lastMoveTime).TotalSeconds >= MOVE_INTERVAL)   // 마지막 이동 후 일정 시간이 지났는지 확인
-                {                                       //현재시간(currentTime)에서 마지막으로 이동한 시간(lastMoveTime)을 빼서 시간간격을 계산 후 
-                    if (playerX > 1) playerX--;          //TotalSeconds : 계산된 시간 간격을 총 초단위의 double값으로 계산한다.
-                    lastMoveTime = currentTime;             //이동 시간 업데이트 : 변환된 총 초단위의 시간이 0.01초(MOVE_INTERVAL)보다
-                }                                            //크거나 같은지 비교하여 이동간격 제한을 구현
+
+                if ((currentTime - lastMoveTime).TotalSeconds >= MOVE_INTERVAL)   // 마지막 이동 후 일정 시간이 지났는지 확인 --> Move_INTERVAL에서 0.01초 간격으로확인한다
+                {                                                           //현재시간(currentTime)에서 마지막으로 이동한 시간(lastMoveTime)을 빼서 시간간격을 계산 후 
+                    if (playerX > 1) playerX--;                             //TotalSeconds : 계산된 시간 간격을 총 초단위의 double값으로 계산한다.
+                    lastMoveTime = currentTime;                              //이동 시간 업데이트 : 변환된 총 초단위의 시간이 0.01초(MOVE_INTERVAL)보다
+                }                                                               //크거나 같은지 비교하여 이동간격 제한을 구현
                 break;
 
             case ConsoleKey.RightArrow:
@@ -122,8 +122,8 @@ class GallagaGame
                 {                                                                // 현재 시간이 10:00:00.100이고
                     if (playerX < WIDTH - 2) playerX++;                          // 마지막 이동이 10:00:00.040이었다면
                     lastMoveTime = currentTime;                                  // 차이는 0.06초                  
-                }                                                               // MOVE_INTERVAL(0.01)보다 크므로 이동 가능
-                break;                                                          // 이동 후 마지막 시간을 현재 시간으로 업데이트
+                }                                                               // MOVE_INTERVAL에 할당한 시간인 0.01 보다 크므로 이동 가능하다.
+                break;                                                          // 그리고 이동 후 마지막 시간을 현재 시간으로 업데이트
             case ConsoleKey.UpArrow:
                 if ((currentTime - lastMoveTime).TotalSeconds >= MOVE_INTERVAL)
                 {
@@ -145,11 +145,10 @@ class GallagaGame
 
         }
 
+
+        //이방향키 이동을 사용했을 때 키보드의 입력 속도가 콘솔 프로그램의 처리 속도보다 빠르기 때문에 키 입력값이 누적됨.
         //var key = Console.ReadKey(true).Key;
-
-
-        //ConsoleKeyInfo keyInfo = Console.ReadKey(true);
-        //switch (Key)                                                //var key변수를 switch에 할당
+        //switch (key)                                                //var key변수를 switch에 할당
         //{
         //    case ConsoleKey.LeftArrow:
         //        if (playerX > 1) playerX--;                         //playerX의 위치가 현재 X좌표 1보다만 크다면 PlayerX위치를 1씩 감소시킵니다
@@ -157,8 +156,14 @@ class GallagaGame
         //    case ConsoleKey.RightArrow:
         //        if (playerX < WIDTH - 2) playerX++;                 //playerX가 전체 콘솔 화면의 크기보다 -2작다면 오른쪽으로 ++(1)씩 증가
         //        break;
+        //    case ConsoleKey.UpArrow:
+        //        if (playerY > 1) playerY--;
+        //        break;
+        //    case ConsoleKey.DownArrow:
+        //        if (playerY < HEIGHT - 2) playerY++;
+        //        break;
         //    case ConsoleKey.Spacebar:
-        //        bullets.Add((playerX, HEIGHT - 2));                 //bullet(총알)의 가로위치는 playerX와 동일, 세로위치는 콘솔화면에서-2를 뺀값
+        //        bullets.Add((playerX, playerY - 1));                 //bullet(총알)의 가로위치는 playerX와 동일, 세로위치는 콘솔화면에서-2를 뺀값
         //        break;                                                  //이렇게 설정 했을 때 playerX가 총알을 발사하는 것처럼 보임
         //}
     }
@@ -181,7 +186,7 @@ class GallagaGame
             bullets[i] = (bullet.x, bullet.y - 1);              //다른 요소의 인덱스에 영향을 미치지 않아 오류가 없음
             if (bullet.y < 0)
             {
-                bullets.RemoveAt(i);
+                bullets.RemoveAt(i);                        //역행 for문을 사용하여 플레이어의 총알이 화면 구성의 y좌표 0 이하일때 플레이어의 총알 제거
             }
         }
 
@@ -200,9 +205,9 @@ class GallagaGame
             {
                 enemyBullets[i] = (bullet.x, newY);
             }
-            if (bullet.y >= HEIGHT)                             //총알의 y좌표가 HEIGHT(Y좌표20)보다 크거나 같을때 
+            if (bullet.y >= HEIGHT)                             //총알의 y좌표가 화면 세로길이 (HEIGHT)보다 크거나 같을때 
             {
-                enemyBullets.RemoveAt(i);                       //적의총알(enemyBullets)은 리스트에서 삭제
+                enemyBullets.RemoveAt(i);                       //적의총알(enemyBullets)은 리스트에서 삭제되도록 역행 for문을 써서 구현함.
             }
         }
 
@@ -238,7 +243,7 @@ class GallagaGame
             
             // 좌우 랜덤 이동
             if (random.Next(100) < 60)                   //0에서 99까지의 숫자중에 랜덤으로 무작위 숫자를 출력-->이 숫자가 30보다 작으면
-            {                                       //enemy.x 좌표에 random.Next(2) * 2 - 1은 -1 또는 1을 무작위로 생성해서 왼쪽 또는 오른쪽 이동 -->int newX의 변수에 할당
+            {                                           //enemy.x 좌표에 random.Next(2) * 2 - 1은 -1 또는 1을 무작위로 생성해서 왼쪽 또는 오른쪽 이동 -->int newX의 변수에 할당
                 int newX = enemy.x + (random.Next(2) * 2 - 1);   //적의 현재 X좌표에 -1또는1을 더하고 새로운 X좌표(newX)에 할당
                 if (newX > 0 && newX < WIDTH - 1)           //화면의 최대치 좌표(X가 0보다 크고 && WIDTH보다 -1 작다)면
                 {
@@ -263,16 +268,16 @@ class GallagaGame
     private void CheckCollision()
     {
         // 플레이어 총알과 적 충돌
-        for (int i = bullets.Count - 1; i >= 0; i--)         //플레이어의 총알[i]가 순서대로 순회하고 삭제했을 때 삭제된 총알인덱스안의 요소를 건너뛰어서(리스트의 인덱스요소가 한칸씩 땡겨짐)
-        {                                                   //오류가 생김 그래서 총알의 리스트를 역순으로 출력하면 앞에 없어진 인덱스의 값에 오류가 없음                              
+        for (int i = bullets.Count - 1; i >= 0; i--)         //플레이어의 총알[i]가 순서대로 순회하고 삭제했을 때 삭제된 총알인덱스 안의 요소를 건너뛰어서(리스트의 인덱스요소가 한칸씩 땡겨짐)
+        {                                                   //그래서 오류가 생김 그래서 총알의 리스트를 역행하면 앞에 없어진 인덱스의 값에 오류가 없음                              
             for (int j = enemies.Count - 1; j >= 0; j--)
             {
-                if (bullets[i].x == enemies[j].x && bullets[i].y == enemies[j].y)   //사용자 총알의 위치와 적 기체X,Y좌표 일치시 
+                if (bullets[i].x == enemies[j].x && bullets[i].y == enemies[j].y)   //사용자 총알의 위치와 적 기체X,Y좌표 일치시에
                 {
-                    bullets.RemoveAt(i);                        //i값일치시 현재 총알을 제거
-                    enemies.RemoveAt(j);                       //j값 일치시 현재 적 제거
-                    score += 100;                               //스코어 +=100
-                    goto NextBullet;                            //NextBullet으로 즉시 이동
+                    bullets.RemoveAt(i);                                              //사용자 총알을 제거
+                    enemies.RemoveAt(j);                                             //총알에 맞은 적 제거
+                    score += 100;                                                     //스코어 +=100점
+                    goto NextBullet;                                                  //NextBullet으로 즉시 이동
                 }
             }
         }
@@ -281,8 +286,8 @@ class GallagaGame
         {   //보스와 플레이어 총알 충돌검사
             for (int k = Boss.Count - 1; k >= 0; k--)
             {
-                if (bullets[i].x == Boss[k].x && bullets[i].y == Boss[k].y)
-                {
+                if (bullets[i].x == Boss[k].x && bullets[i].y == Boss[k].y)     //플레이어가 쏜 총알의x,y좌표와 보스의 x.y좌표가 일치할 때
+                {                                                               //플레이어의 총알과 보스 둘 다 제거 후 게임 종료
                     bullets.RemoveAt(i);
                     Boss.RemoveAt(k);
                     isGameOver = true;
@@ -309,9 +314,10 @@ class GallagaGame
     private void Draw()
     {
         Console.SetCursorPosition(0, 0);
-        int timeAttack = Math.Max(0, 60 - (int)gameTimer.Elapsed.TotalSeconds);
-        
-        
+        int timeAttack = Math.Max(0, 60 - (int)gameTimer.Elapsed.TotalSeconds);  //gameTimer는 게임이 시작된 이후에 경과시간을 측정하는 타이머
+                                                                                 //Elapsed 타이머가 시작된 이후 경과된 시간을 나타냄 //TotalSeconds는 경과 시간을 초단위로 변환
+                                                                                 //60초 에서 경과시간을 뺌 그 후 계산된 값과 0을 비교하여 더 큰값을 반환
+                                                                                 //Math.Max(0,...)계산된 값을 0과 비교해서 더 큰값을 반환
         var screen = new char[HEIGHT, WIDTH];                                   //이 배열은 char형식의 2차원 배열을 형성(게임 화면의 각 위치에 어떤문자를 출력할지 저장)
         for (int y = 0; y < HEIGHT; y++)
             for (int x = 0; x < WIDTH; x++)
@@ -328,7 +334,7 @@ class GallagaGame
 
 
 
-        foreach (var bullet in bullets)                                     //foreach문을 사용하여 bullets리스트안의 모든 bullet을 순회
+        foreach (var bullet in bullets)                                 //foreach문을 사용하여 bullets리스트안의 모든 bullet을 순회
             if (bullet.y >= 0 && bullet.y < HEIGHT)                     //총알의 위치가 y축에서 0보다 크거나같고 HEIGHT(20)보다 작은 조건에서
                 screen[bullet.y, bullet.x] = '|';                      //screen배열의 위치에 'ㅣ'문자 출력
 

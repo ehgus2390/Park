@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\402-06\\Desktop\\박도현\\Park\\GalagaTest\\ComTest\\ComTest\\ComTest.csproj": {}
+    "F:\\Github project\\Park\\GalagaTest\\ComTest\\ComTest\\ComTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\402-06\\Desktop\\박도현\\Park\\GalagaTest\\ComTest\\ComTest\\ComTest.csproj": {
+    "F:\\Github project\\Park\\GalagaTest\\ComTest\\ComTest\\ComTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\402-06\\Desktop\\박도현\\Park\\GalagaTest\\ComTest\\ComTest\\ComTest.csproj",
+        "projectUniqueName": "F:\\Github project\\Park\\GalagaTest\\ComTest\\ComTest\\ComTest.csproj",
         "projectName": "ComTest",
-        "projectPath": "C:\\Users\\402-06\\Desktop\\박도현\\Park\\GalagaTest\\ComTest\\ComTest\\ComTest.csproj",
-        "packagesPath": "C:\\Users\\402-06\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\402-06\\Desktop\\박도현\\Park\\GalagaTest\\ComTest\\ComTest\\obj\\",
+        "projectPath": "F:\\Github project\\Park\\GalagaTest\\ComTest\\ComTest\\ComTest.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "F:\\Github project\\Park\\GalagaTest\\ComTest\\ComTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\402-06\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
