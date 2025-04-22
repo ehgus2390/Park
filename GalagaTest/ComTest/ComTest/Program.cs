@@ -242,7 +242,7 @@ class GallagaGame
             }
             
             // 좌우 랜덤 이동
-            if (random.Next(100) < 60)                   //0에서 99까지의 숫자중에 랜덤으로 무작위 숫자를 출력-->이 숫자가 30보다 작으면
+            if (random.Next(100) < 70)                   //0에서 99까지의 숫자중에 랜덤으로 무작위 숫자를 출력-->이 숫자가 30보다 작으면
             {                                           //enemy.x 좌표에 random.Next(2) * 2 - 1은 -1 또는 1을 무작위로 생성해서 왼쪽 또는 오른쪽 이동 -->int newX의 변수에 할당
                 int newX = enemy.x + (random.Next(2) * 2 - 1);   //적의 현재 X좌표에 -1또는1을 더하고 새로운 X좌표(newX)에 할당
                 if (newX > 0 && newX < WIDTH - 1)           //화면의 최대치 좌표(X가 0보다 크고 && WIDTH보다 -1 작다)면
