@@ -1,15 +1,15 @@
-ï»¿public class Player : GameObject
+public class Player : GameObject
 {
-    public Player(int x, int y) : base(x,y,'A')    //ë¶€ëª¨í´ëž˜ìŠ¤ì¸ GameObjectì˜ ìƒì„±ìžë¥¼ í˜¸ì¶œí•˜ë©´ì„œ x,yì™€ ë¬¸ìž'A'ë¥¼ ì¸ìžë¡œ ë„˜ê²¨ì¤Œ
+    public Player(int x, int y) : base(x,y,'A')    //ºÎ¸ðÅ¬·¡½ºÀÎ GameObjectÀÇ »ý¼ºÀÚ¸¦ È£ÃâÇÏ¸é¼­ x,y¿Í ¹®ÀÚ'A'¸¦ ÀÎÀÚ·Î ³Ñ°ÜÁÜ
     {
 
     }
     public void Move(int k)
     {
-        int distX = X + k;                //í”Œë ˆì´ì–´ ìœ„ì¹˜X(x)ì¢Œí‘œì— kê°’ì„ ë”í•œê²ƒ == distX
+        int distX = X + k;                //ÇÃ·¹ÀÌ¾î À§Ä¡X(x)ÁÂÇ¥¿¡ k°ªÀ» ´õÇÑ°Í == distX
         if (distX >= 0 && distX < Console.WindowWidth)
         {
-            X = distX;                        //ifë¬¸(distXê°€ 0ë³´ë‹¤ í¬ê±°ë‚˜ê°™ê³  ì½˜ì†”ì°½ì˜ ë„“ì´ë³´ë‹¤ ìž‘ë‹¤ë©´ disXê°’ì„ Xê°’ìœ¼ë¡œ ë°˜í™˜(ì¦‰, ìƒˆë¡œìš´ ì¢Œí‘œë¡œ ì—…ë°ì´íŠ¸))
+            X = distX;                        //if¹®(distX°¡ 0º¸´Ù Å©°Å³ª°°°í ÄÜ¼ÖÃ¢ÀÇ ³ÐÀÌº¸´Ù ÀÛ´Ù¸é disX°ªÀ» X°ªÀ¸·Î ¹ÝÈ¯(Áï, »õ·Î¿î ÁÂÇ¥·Î ¾÷µ¥ÀÌÆ®))
         }
     }
 }

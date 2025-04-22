@@ -61,7 +61,7 @@ class GallagaGame
     {
         Console.CursorVisible = false;                                      //커서위치 숨김
         Console.WindowHeight = HEIGHT + 2;
-        Console.WindowWidth = WIDTH + 2;                            //콘솔창의 넓이를 설정할때 Player기체의 움직임을 고려해서 전체 넓이(WIDTH)에 +2한 값을                                                             
+        Console.WindowWidth = WIDTH + 2;                            //콘솔창의 넓이를 설정할때 Player기체의 크기를 고려해서 전체 넓이(WIDTH)에 +2한 값을                                                             
         Console.WriteLine("갤러그 게임을 시작합니다!");           //콘솔창의 크기로 설정
         Console.WriteLine("조작법:");
         Console.WriteLine("← : 왼쪽 이동");
@@ -89,7 +89,7 @@ class GallagaGame
             Thread.Sleep(FRAME_DELAY);                              //적이 모두 죽고 다시 새로운 적을 생성할 때 1초동안 화면종료 후 재출력
         }
 
-        GameOver();                                                 //Update함수 isgameOver = true 일 때 gameOver함수 호출
+        GameOver();                                                 
     }                                                               
 
     private void HandleInput()

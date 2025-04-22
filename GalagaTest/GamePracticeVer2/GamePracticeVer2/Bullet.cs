@@ -1,4 +1,4 @@
-﻿public class Bullet : GameObject
+public class Bullet : GameObject
 {
     public Bullet(int x, int y) : base(x,y, '|')
     {

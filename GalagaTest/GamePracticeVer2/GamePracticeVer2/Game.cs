@@ -1,4 +1,4 @@
-ï»¿using System.Data;
+using System.Data;
 
 public class Game
 {
@@ -70,7 +70,7 @@ public class Game
 
     private void Update()
     {
-        //ì´ì•Œ ì œìž‘
+        //ÃÑ¾Ë Á¦ÀÛ
         for (int i = bullets.Count-1; i >=0; i--)
         {
             bullets[i].Move();
@@ -81,7 +81,7 @@ public class Game
                 continue;
             }
 
-            //ì¶©ëŒì²´í¬
+            //Ãæµ¹Ã¼Å©
             for (int j = enemies.Count - 1; j >= 0; j--)
             {
                 if (bullets[i].X == enemies[j].X && bullets[i].Y == enemies[j].Y)
