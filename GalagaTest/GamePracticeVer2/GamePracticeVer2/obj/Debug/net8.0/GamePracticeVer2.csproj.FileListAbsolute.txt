@@ -13,3 +13,18 @@ F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\ne
 F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.pdb
 F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.genruntimeconfig.cache
 F:\Github project\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\ref\GamePracticeVer2.dll
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\bin\Debug\net8.0\GamePracticeVer2.exe
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\bin\Debug\net8.0\GamePracticeVer2.deps.json
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\bin\Debug\net8.0\GamePracticeVer2.runtimeconfig.json
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\bin\Debug\net8.0\GamePracticeVer2.dll
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\bin\Debug\net8.0\GamePracticeVer2.pdb
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.AssemblyInfoInputs.cache
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.AssemblyInfo.cs
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.csproj.CoreCompileInputs.cache
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.sourcelink.json
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.dll
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\refint\GamePracticeVer2.dll
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.pdb
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\GamePracticeVer2.genruntimeconfig.cache
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\GamePracticeVer2\GamePracticeVer2\obj\Debug\net8.0\ref\GamePracticeVer2.dll
