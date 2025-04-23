@@ -9,6 +9,7 @@ public class Game
     private int score;
     private bool gameOver;
 
+
     public Game()
     {
         player = new Player(Console.WindowWidth / 2, Console.WindowHeight - 2);
@@ -32,8 +33,8 @@ public class Game
     public void Run()
     {
         Console.CursorVisible = false;
-        Console.WindowHeight = 25;
-        Console.WindowWidth = 80;
+        Console.WindowHeight = 20;
+        Console.WindowWidth = 60;
 
         while(!gameOver)
         {

@@ -7,4 +7,25 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="bullet.cs" />
+    <Compile Remove="GameObject.cs" />
+    <Compile Remove="program1.cs" />
+    <Compile Remove="sound.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bullet.cs" />
+    <None Include="GameObject.cs" />
+    <None Include="sound.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <XamlAppDef Include="program1.cs" />
+  </ItemGroup>
+
 </Project>

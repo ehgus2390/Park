@@ -42,3 +42,11 @@ F:\Github project\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\refint\ComTes
 F:\Github project\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ComTest.pdb
 F:\Github project\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ComTest.genruntimeconfig.cache
 F:\Github project\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ref\ComTest.dll
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ComTest.csproj.AssemblyReference.cache
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\ComTest\ComTest\bin\Debug\net8.0\NAudio.dll
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\ComTest\ComTest\bin\Debug\net8.0\NAudio.Asio.dll
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\ComTest\ComTest\bin\Debug\net8.0\NAudio.Core.dll
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\ComTest\ComTest\bin\Debug\net8.0\NAudio.Midi.dll
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\ComTest\ComTest\bin\Debug\net8.0\NAudio.Wasapi.dll
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\ComTest\ComTest\bin\Debug\net8.0\NAudio.WinMM.dll
+C:\Users\402-06\Desktop\박도현\Park\GalagaTest\ComTest\ComTest\obj\Debug\net8.0\ComTest.csproj.Up2Date
