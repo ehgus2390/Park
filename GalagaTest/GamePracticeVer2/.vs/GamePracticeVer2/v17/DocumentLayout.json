@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|solutionrelative:gamepracticever2\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|c:\\users\\402-06\\desktop\\\uBC15\uB3C4\uD604\\park\\galagatest\\gamepracticever2\\gamepracticever2\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|solutionrelative:gamepracticever2\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|c:\\users\\402-06\\desktop\\\uBC15\uB3C4\uD604\\park\\galagatest\\gamepracticever2\\gamepracticever2\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|solutionrelative:gamepracticever2\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|c:\\users\\402-06\\desktop\\\uBC15\uB3C4\uD604\\park\\galagatest\\gamepracticever2\\gamepracticever2\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|solutionrelative:gamepracticever2\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|c:\\users\\402-06\\desktop\\\uBC15\uB3C4\uD604\\park\\galagatest\\gamepracticever2\\gamepracticever2\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|solutionrelative:gamepracticever2\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|c:\\users\\402-06\\desktop\\\uBC15\uB3C4\uD604\\park\\galagatest\\gamepracticever2\\gamepracticever2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|solutionrelative:gamepracticever2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|c:\\users\\402-06\\desktop\\\uBC15\uB3C4\uD604\\park\\galagatest\\gamepracticever2\\gamepracticever2\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|solutionrelative:gamepracticever2\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|c:\\users\\402-06\\desktop\\\uBC15\uB3C4\uD604\\park\\galagatest\\gamepracticever2\\gamepracticever2\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|solutionrelative:gamepracticever2\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC1BBF40-0B4D-4972-8339-CA67F6AE28D5}|GamePracticeVer2\\GamePracticeVer2.csproj|c:\\users\\402-06\\desktop\\\uBC15\uB3C4\uD604\\park\\galagatest\\gamepracticever2\\gamepracticever2\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,26 +70,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "GameObject.cs",
               "DocumentMoniker": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\GameObject.cs",
               "RelativeDocumentMoniker": "GamePracticeVer2\\GameObject.cs",
               "ToolTip": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\GameObject.cs",
               "RelativeToolTip": "GamePracticeVer2\\GameObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T07:29:05.378Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Player.cs",
               "RelativeDocumentMoniker": "GamePracticeVer2\\Player.cs",
               "ToolTip": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Player.cs",
               "RelativeToolTip": "GamePracticeVer2\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T07:09:42.381Z",
               "EditorCaption": ""
@@ -102,21 +102,23 @@
               "RelativeDocumentMoniker": "GamePracticeVer2\\Enemy.cs",
               "ToolTip": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Enemy.cs",
               "RelativeToolTip": "GamePracticeVer2\\Enemy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T07:09:12.148Z"
+              "WhenOpened": "2025-04-18T07:09:12.148Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Bullet.cs",
               "RelativeDocumentMoniker": "GamePracticeVer2\\Bullet.cs",
               "ToolTip": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Bullet.cs",
               "RelativeToolTip": "GamePracticeVer2\\Bullet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T07:08:41.863Z"
+              "WhenOpened": "2025-04-18T07:08:41.863Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -126,7 +128,7 @@
               "RelativeDocumentMoniker": "GamePracticeVer2\\Game.cs",
               "ToolTip": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Game.cs",
               "RelativeToolTip": "GamePracticeVer2\\Game.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAkwE4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T06:43:11.846Z",
               "EditorCaption": ""
@@ -139,7 +141,7 @@
               "RelativeDocumentMoniker": "GamePracticeVer2\\Program.cs",
               "ToolTip": "C:\\Users\\402-06\\Desktop\\\uBC15\uB3C4\uD604\\Park\\GalagaTest\\GamePracticeVer2\\GamePracticeVer2\\Program.cs",
               "RelativeToolTip": "GamePracticeVer2\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAA+wAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T06:41:47.71Z",
               "EditorCaption": ""

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.Media;
 
 
 /**********************************************************************
@@ -20,17 +21,20 @@ class GallagaGame
     private const int WIDTH = 60;
     private const int HEIGHT = 20;
     private const int FRAME_DELAY = 50;
-    private const int frame_delay = 16;
+    
+
+    
 
     private int bossX;
     private int playerX;
     private int playerY;
     private int score;
     private bool isGameOver;
-    private List<(int x, int y)> bullets;
+    //private List<(int x, int y)> bullets;
     private List<(int x, int y)> enemies;
     private List<(int x, int y)> enemyBullets;
     private List<(int x, int y)> Boss;
+    private List<Bullet> bullets;
     
     private DateTime lastMoveTime = DateTime.Now; // DateTimeNow속성에 접근하여 현재 시스템의 시간정보를 담고있는 새로운 DateTime(날짜와 시간정보를 모두 담을수있는 자료형(특정 이벤트가 발생한 시간 저장))반환 
                                                   //현재 시간정보와 날짜를(DateTime.Now) ---> lastMoveTime에 마지막 이동 시간을 저장 ---> 현재 시간을 기록하는 lastMoveTime이라는 DateTime변수를 선언하고 초기화함.
@@ -41,6 +45,7 @@ class GallagaGame
     private bool bossSpawned = false;
     private Stopwatch gameTimer;
     private Random random;
+    
    
     public GallagaGame()
     {
@@ -49,14 +54,14 @@ class GallagaGame
         playerX = WIDTH / 2;                           //전체 화면의 1/2 에서 시작
         score = 0;                                     //스코어 0점에서 시작 적 기체 명중시+=100
         isGameOver = false;
-        bullets = new List<(int x, int y)>();          //List<(x,y)>값 bullets변수에 할당
+        //bullets = new List<(int x, int y)>();          //List<(x,y)>값 bullets변수에 할당
         enemies = new List<(int x, int y)>();           //List<(x,y)>값 enemies변수에 할당
         enemyBullets = new List<(int x, int y)>();     //List<(x,y)>값 enemyBullets변수에 할당
         Boss = new List<(int x, int y)>();
-        
+        //SoundManager.StartBackgroundMusic();
         gameTimer = new Stopwatch();
         random = new Random();
-
+        bullets = new List<Bullet>();
 
         for (int i = 0; i < 9; i++)
         {
@@ -138,10 +143,12 @@ class GallagaGame
                     lastMoveTime = currentTime;
                 }
                 break;
-
             case ConsoleKey.Spacebar:
-                bullets.Add((playerX, playerY - 1));        //bullet(총알)의 가로위치는 playerX와 동일, 세로위치는 콘솔화면에서-2를 뺀값
-                break;                                      //이렇게 설정 했을 때 playerX가 총알을 발사하는 것처럼 보임
+                bullets.Add(new Bullet(playerX, playerY-1));                 //bullet(총알)의 가로위치는 playerX와 동일, 세로위치는 콘솔화면에서-2를 뺀값
+                break;
+            
+                                                               //bullet(총알)의 가로위치는 playerX와 동일, 세로위치는 콘솔화면에서-2를 뺀값
+                                                             //이렇게 설정 했을 때 playerX가 총알을 발사하는 것처럼 보임
 
         }
 
@@ -162,17 +169,19 @@ class GallagaGame
         //    case ConsoleKey.DownArrow:
         //        if (playerY < HEIGHT - 2) playerY++;
         //        break;
-        //    case ConsoleKey.Spacebar:
-        //        bullets.Add((playerX, playerY - 1));                 //bullet(총알)의 가로위치는 playerX와 동일, 세로위치는 콘솔화면에서-2를 뺀값
-        //        break;                                                  //이렇게 설정 했을 때 playerX가 총알을 발사하는 것처럼 보임
-        //}
-    }
-
+            //case ConsoleKey.Spacebar:
+            //bullets.Add((playerX, playerY - 1));                 //bullet(총알)의 가로위치는 playerX와 동일, 세로위치는 콘솔화면에서-2를 뺀값
+            //break;                                                  //이렇게 설정 했을 때 playerX가 총알을 발사하는 것처럼 보임
+                                                                    //}
+                                                                    //}
+    }    
     private void Update()
-    {
+    {   //총알 업데이트
+        
+
         int gameTime = (int)gameTimer.Elapsed.TotalSeconds;
 
-        if (gameTime >= 60 && !bossSpawned)                     //60초 보다 gameTime이 크거나 같을 때 = 60초 후 bossSpawned
+        if (gameTime >= 10 && !bossSpawned)                     //60초 보다 gameTime이 크거나 같을 때 = 60초 후 bossSpawned
         {
             Boss.Add((random.Next(5, WIDTH - 5), random.Next(1, 2)));
             bossSpawned = true;
@@ -180,15 +189,26 @@ class GallagaGame
             //UpdateBoss();
         }
         // 총알 이동
-        for (int i = bullets.Count-1; i >= 0; i--)              //bullets리스트의 마지막 요소부터 역순으로 순회
-        {                                                     //플레이어의 총알[i]가 순서대로 순회했을 때 없어진 총알의 리스트 인덱스를 호출하지 않게되고
-            var bullet = bullets[i];                        //오류가 생김 그래서 총알의 리스트를 역순으로 출력하면 앞에 없어진 인덱스의 삭제가 --->
-            bullets[i] = (bullet.x, bullet.y - 1);              //다른 요소의 인덱스에 영향을 미치지 않아 오류가 없음
-            if (bullet.y < 0)
+        for (int i = bullets.Count -1; i >= 0; i--)
+        {
+            bullets[i].Move();
             {
-                bullets.RemoveAt(i);                        //역행 for문을 사용하여 플레이어의 총알이 화면 구성의 y좌표 0 이하일때 플레이어의 총알 제거
+                if (bullets[i].y < 0)
+                {
+                    bullets.RemoveAt(i);
+                }
             }
         }
+
+        //for (int i = bullets.Count - 1; i >= 0; i--)              //bullets리스트의 마지막 요소부터 역순으로 순회
+        //{                                                     //플레이어의 총알[i]가 순서대로 순회했을 때 없어진 총알의 리스트 인덱스를 호출하지 않게되고
+        //    var bullet = bullets[i];                        //오류가 생김 그래서 총알의 리스트를 역순으로 출력하면 앞에 없어진 인덱스의 삭제가 --->
+        //    bullets[i] = (bullet.x, bullet.y - 1);              //다른 요소의 인덱스에 영향을 미치지 않아 오류가 없음
+        //    if (bullet.y < 0)
+        //    {
+        //        bullets.RemoveAt(i);                        //역행 for문을 사용하여 플레이어의 총알이 화면 구성의 y좌표 0 이하일때 플레이어의 총알 제거
+        //    }
+        //}
 
         // 적 총알 이동
         for (int i = enemyBullets.Count-1; i >= 0; i--)
@@ -220,15 +240,17 @@ class GallagaGame
                 enemyBullets.Add((boss.x - 1, boss.y));
                 enemyBullets.Add((boss.x + 1, boss.y));
             }
-            //보스 움직임 거리
+            //보스 움직임
             if (random.Next(100) < 80)                         //random.Next(100) --> 100개의 난수를 랜덤으로 생성했을 때 그 값이 80보다 작으면 이동
             {                                                  //이동조건 : 7개의 난수발생[0,1,2,3,4,5,6] 모두의 값에 -3 ---> [-3, -2, -1, 0, 1, 2, 3]
                 int newX = boss.x + (random.Next(7) - 3);      //을 보스의 x좌표에 저장후 newX변수에 할당
                 if (newX > 0 && newX < WIDTH - 1)             // x좌표가 0보다 크고 콘솔창의 -1 범위의 조건에서만 보스의 움직임 출력
                 {
-                    Boss[i] = (newX, boss.y);
-                }
-            }
+                    Boss[i] = (newX, boss.y);                   //random.Next(100) --> 100개의 난수를 랜덤으로 생성했을 때 그 값이 80보다 작으면 이동
+                }                                               //이동조건 : 7개의 난수발생[0,1,2,3,4,5,6] 모두의 값에 -3 ---> [-3, -2, -1, 0, 1, 2, 3]
+            }                                                       //을 보스의 x좌표에 저장후 newX변수에 할당
+                                                                // x좌표가 0보다 크고 콘솔창의 -1 범위의 조건에서만 보스의 움직임 출력
+
         }
 
 
@@ -240,7 +262,6 @@ class GallagaGame
             {
                 enemyBullets.Add((enemy.x, enemy.y + 1));  //적의 x좌표,y좌표+1(1칸 아래)의 위치에 적의 총알생성 
             }
-            
             // 좌우 랜덤 이동
             if (random.Next(100) < 70)                   //0에서 99까지의 숫자중에 랜덤으로 무작위 숫자를 출력-->이 숫자가 30보다 작으면
             {                                           //enemy.x 좌표에 random.Next(2) * 2 - 1은 -1 또는 1을 무작위로 생성해서 왼쪽 또는 오른쪽 이동 -->int newX의 변수에 할당
@@ -250,6 +271,28 @@ class GallagaGame
                     enemies[i] = (newX, enemy.y);           //newX(새로운좌표)와 enemy(2,8)좌표를 enemies리스트에 넣음
                 }
             }
+            //적 총알발사 로직
+            //foreach (var enemy in enemies)
+            //{
+            //    if (random.Next(100) < 10)
+            //    {
+            //        bulletManager.AddEnemyBullet(enemy.x, enemy.y + 1);
+            //    }
+            //}
+
+            // 좌우 랜덤 이동
+
+            //foreach (var enemy in enemies)
+            //{
+            //    if (random.Next(100) < 70)                   //0에서 99까지의 숫자중에 랜덤으로 무작위 숫자를 출력-->이 숫자가 30보다 작으면
+            //    {                                           //enemy.x 좌표에 random.Next(2) * 2 - 1은 -1 또는 1을 무작위로 생성해서 왼쪽 또는 오른쪽 이동 -->int newX의 변수에 할당
+            //        int newX = enemy.x + (random.Next(2) * 2 - 1);   //적의 현재 X좌표에 -1또는1을 더하고 새로운 X좌표(newX)에 할당
+            //        if (newX > 0 && newX < WIDTH - 1)           //화면의 최대치 좌표(X가 0보다 크고 && WIDTH보다 -1 작다)면
+            //        {
+            //            enemies[i] = (newX, enemy.y);           //newX(새로운좌표)와 enemy(2,8)좌표를 enemies리스트에 넣음
+            //        }
+            //    }
+            //}
         }
 
         // 충돌 체크
@@ -267,9 +310,10 @@ class GallagaGame
 
     private void CheckCollision()
     {
-        // 플레이어 총알과 적 충돌
+        //플레이어 총알과 적 충돌
         for (int i = bullets.Count - 1; i >= 0; i--)         //플레이어의 총알[i]가 순서대로 순회하고 삭제했을 때 삭제된 총알인덱스 안의 요소를 건너뛰어서(리스트의 인덱스요소가 한칸씩 땡겨짐)
-        {                                                   //그래서 오류가 생김 그래서 총알의 리스트를 역행하면 앞에 없어진 인덱스의 값에 오류가 없음                              
+        {
+            bool bulletHit = false;                         //그래서 오류가 생김 그래서 총알의 리스트를 역행하면 앞에 없어진 인덱스의 값에 오류가 없음                              
             for (int j = enemies.Count - 1; j >= 0; j--)
             {
                 if (bullets[i].x == enemies[j].x && bullets[i].y == enemies[j].y)   //사용자 총알의 위치와 적 기체X,Y좌표 일치시에
@@ -277,8 +321,14 @@ class GallagaGame
                     bullets.RemoveAt(i);                                              //사용자 총알을 제거
                     enemies.RemoveAt(j);                                             //총알에 맞은 적 제거
                     score += 100;                                                     //스코어 +=100점
-                    goto NextBullet;                                                  //NextBullet으로 즉시 이동
+                    bulletHit = true;
+                    break;                                  
                 }
+            }
+
+            if (bulletHit)
+            {
+                continue;
             }
         }
 
@@ -296,15 +346,16 @@ class GallagaGame
             }
         }
 
-    NextBullet:
+
 
         // 적 총알과 플레이어 충돌
-        foreach (var bullet in enemyBullets)                                         //enemyBullets의 모든 총알을 순회
+        for (int i = enemyBullets.Count - 1; i >= 0; i--)
         {
-            if (bullet.x == playerX && bullet.y == playerY)                       //플레이어의 X좌표와 적bullet의X좌표가 같고 bullet.y좌표가 플레이어 Y(HEIGHT -1)좌표와 같다면
-            {                                                                       //HEIGHT-1(플레이어의 Y좌표)의 좌표와 일치하는지 검사(플레이어의Y좌표는 HEIGHT-2)
-                isGameOver = true;                                                  //일치한다면 isGameOver = true를 반환
-                return;
+            var bullet = enemyBullets[i];
+            if (bullet.x == playerX && bullet.y == playerY)
+            {
+                isGameOver = true;
+                return;  
             }
         }
     }
@@ -314,7 +365,7 @@ class GallagaGame
     private void Draw()
     {
         Console.SetCursorPosition(0, 0);
-        int timeAttack = Math.Max(0, 60 - (int)gameTimer.Elapsed.TotalSeconds);  //gameTimer는 게임이 시작된 이후에 경과시간을 측정하는 타이머
+        int timeAttack = Math.Max(0, 10 - (int)gameTimer.Elapsed.TotalSeconds);  //gameTimer는 게임이 시작된 이후에 경과시간을 측정하는 타이머
                                                                                  //Elapsed 타이머가 시작된 이후 경과된 시간을 나타냄 //TotalSeconds는 경과 시간을 초단위로 변환
                                                                                  //60초 에서 경과시간을 뺌 그 후 계산된 값과 0을 비교하여 더 큰값을 반환
                                                                                  //Math.Max(0,...)계산된 값을 0과 비교해서 더 큰값을 반환
@@ -324,10 +375,7 @@ class GallagaGame
                 screen[y, x] = ' ';
 
 
-        //Console.SetCursorPosition(playerX, HEIGHT);
-        //Console.ForegroundColor = ConsoleColor.White;
-        //Console.SetCursorPosition(playerX, playerY);
-        //Console.Write("A");
+        
         //플레이어 캐릭터
         screen[playerY, playerX] = 'A';                                  //플레이어'A'위치 HEIGHT(최대20)-1 --->Y좌표 , X좌표--->2/60
         //Console.Write(playerX.Symbol);
@@ -337,9 +385,9 @@ class GallagaGame
         foreach (var bullet in bullets)                                 //foreach문을 사용하여 bullets리스트안의 모든 bullet을 순회
             if (bullet.y >= 0 && bullet.y < HEIGHT)                     //총알의 위치가 y축에서 0보다 크거나같고 HEIGHT(20)보다 작은 조건에서
                 screen[bullet.y, bullet.x] = '|';                      //screen배열의 위치에 'ㅣ'문자 출력
+        //bulletManager.DrawBullets(screen);
 
-        
-        
+
         foreach (var bullet in enemyBullets)                        //enemyBullets리스트의 모든 총알 순회
             if (bullet.y >= 0 && bullet.y < HEIGHT)                  //총알의 위치가 y축에서 0보다 크거나같고 HEIGHT(20)보다 작은 조건에서
                 screen[bullet.y, bullet.x] = '*';                   //screen배열의 위치에 'ㅣ'문자 출력(총알이 화면밖으로 나가면 출력하지 않음)
@@ -386,7 +434,8 @@ class GallagaGame
         Console.Clear();                                                //적의 총알을 맞을시 콘솔창 clear
         Console.WriteLine($"Game Over! Final Score: {score}");          //총 스코어 확인
         Console.WriteLine("Press any key to exit");                      //게임종료 키
-        Console.ReadKey();                                          
+        Console.ReadKey();   
+        //bulletManager.Clear();
     }
 
     static void Main(string[] args)
